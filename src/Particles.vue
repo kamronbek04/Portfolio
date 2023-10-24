@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="particle-container">
     <vue-particles
       id="tsparticles"
       :particlesInit="particlesInit"

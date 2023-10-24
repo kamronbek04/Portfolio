@@ -1,6 +1,6 @@
 <template>
   <div class="container header">
-    <Particles class="particles" />
+    <Particles />
     <header>
       <div class="header__content">
         <div class="violet__img--wrapper">
@@ -44,7 +44,7 @@ header {
 .header__content {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 28px;
 }
 .header__title {
   font-size: 30px;
@@ -54,13 +54,13 @@ header {
 }
 .header-name {
   color: var(--violet);
-  font-size: 90px;
+  font-size: 84px;
   font-weight: 700;
   margin: 0;
   letter-spacing: 2px;
 }
 .header__description {
-  font-size: 40px;
+  font-size: 36px;
 }
 .violet__img--wrapper {
   display: flex;
@@ -104,7 +104,7 @@ header {
     gap: 30px;
   }
   .header-name {
-    font-size: 54px;
+    font-size: 60px;
   }
   .header__img {
     display: none;
