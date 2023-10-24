@@ -1,12 +1,12 @@
 <template>
   <div class="intro">
     <div class="container">
-      <div class="intro__title--wrapper">
-        <p class="intro__title">Overview</p>
+      <div class="intro__title--wrapper title__wrapper">
+        <p class="main__title">Overview</p>
         <p class="bg__title">Overview</p>
       </div>
-      <div class="intro__content--wrapper">
-        <p>
+      <div class="intro__content--wrapper content__wrapper">
+        <p class="content__desc">
           I am a software engineer with expertise in a range of web development
           technologies, including <u>HTML</u>, <u>CSS</u>, <u>Sass</u>,
           <u>Bootstrap</u>, <u>JavaScript</u>, <u>React</u>, <u>Vue.js</u>, and
@@ -62,32 +62,6 @@ export default {
 .intro {
   background-color: var(--main-bg);
 }
-.intro__title {
-  padding-top: 60px;
-  margin-bottom: 40px;
-}
-.intro__title--wrapper {
-  position: relative;
-  text-align: center;
-}
-.intro__title {
-  font-size: 48px;
-  font-weight: 700;
-  color: var(--white);
-}
-.bg__title {
-  position: absolute;
-  top: 32px;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 96px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  opacity: 0.1;
-}
-.intro__content--wrapper p {
-  font-size: 24px;
-}
 .intro__tools--wrapper {
   margin-top: 40px;
   display: flex;
@@ -105,31 +79,11 @@ export default {
   }
 }
 @media (max-width: 600px) {
-  .bg__title {
-    font-size: 80px;
-    top: 36px;
-  }
-  .intro__title {
-    font-size: 40px;
-  }
   .tools__img {
     width: 64px;
   }
-  .intro__content--wrapper p {
-    font-size: 20px;
-  }
 }
 @media (max-width: 450px) {
-  .bg__title {
-    font-size: 54px;
-    top: 48px;
-  }
-  .intro__title {
-    font-size: 32px;
-  }
-  .intro__content--wrapper p {
-    font-size: 16px;
-  }
   .tools__img {
     width: 40px;
   }
