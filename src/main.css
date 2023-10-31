@@ -27,18 +27,20 @@
   font-size: 48px;
   font-weight: 700;
   color: var(--white);
-  padding-top: 60px;
+  padding-top: 90px;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 .bg__title {
   position: absolute;
-  top: 32px;
+  top: 70px;
   left: 50%;
   transform: translate(-50%);
   font-size: 96px;
   font-weight: 700;
   letter-spacing: 4px;
   opacity: 0.1;
+  text-transform: uppercase;
 }
 
 .content__wrapper {
@@ -55,7 +57,7 @@
 @media (max-width: 600px) {
   .bg__title {
     font-size: 80px;
-    top: 36px;
+    top: 72px;
   }
   .main__title {
     font-size: 40px;
@@ -67,7 +69,7 @@
 @media (max-width: 450px) {
   .bg__title {
     font-size: 54px;
-    top: 48px;
+    top: 80px;
   }
   .main__title {
     font-size: 32px;
@@ -76,10 +78,37 @@
     font-size: 16px;
   }
 }
+.html {
+  color: var(--html);
+}
+.css {
+  color: var(--css);
+}
+.js {
+  color: var(--js);
+}
+.restapi {
+  color: var(--restapi);
+}
+.react {
+  color: var(--react);
+}
+.vue {
+  color: var(--vue);
+}
 :root {
   /* colors */
   --main-bg: #050816;
   --default-color: #adb5bd;
   --white: #fff;
   --violet: #7950f2;
+  --tertiary: #161031;
+  --html: #fd7e14;
+  --css: #228be6;
+  --js: #fcc419;
+  --react: #04fdff;
+  --vue: #12b886;
+  --bootstrap: #523e78;
+  --sass: #f03e3e;
+  --restapi: #51cf66;
 }
