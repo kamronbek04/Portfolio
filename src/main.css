@@ -71,6 +71,10 @@
   }
 }
 @media (max-width: 450px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .bg__title {
     font-size: 50px;
     top: 60px;
