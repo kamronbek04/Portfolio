@@ -1,58 +1,3 @@
-<!-- <template>
-  <div class="project">
-    <div class="container">
-      <div class="project__title--wrapper title__wrapper">
-        <p class="main__title">Projects</p>
-        <p class="bg__title">Projects</p>
-      </div>
-      <div class="project__content--wrapper content__wrapper">
-        <p class="content__desc">
-          This section showcases my projects, providing a glimpse of my skills
-          and experience. Each project represents a real-world example of my
-          work, highlighting my problem-solving abilities, diverse technical
-          expertise, and project management capabilities.
-        </p>
-      </div>
-
-      <div class="project__cards">
-        <div
-          v-for="project in projects"
-          :key="project.title"
-          :class="{
-            card__items: true,
-            'hide-on-mobile': !showMore && index >= projects.length - 2,
-          }"
-        >
-          <div class="card__img--wrapper">
-            <a :href="project.demo" target="_blank">
-              <img class="card__img" :src="project.img" />
-              <a :href="project.github" class="github" target="_blank">
-                <img src="./assets/tools/github.png" />
-              </a>
-            </a>
-          </div>
-
-          <div class="card__content">
-            <p class="card__content--title">{{ project.title }}</p>
-
-            <p class="card__content--desc">
-              {{ project.desc }}
-            </p>
-          </div>
-
-          <div class="card__footer">
-            <p v-for="tool in project.tools" :class="tool" :key="tool">
-              #{{ tool }}
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="card__button">
-        <button @click="showCards">Show more</button>
-      </div>
-    </div>
-  </div>
-</template> -->
 <template>
   <div class="project">
     <div class="container">
@@ -318,13 +263,6 @@ export default {
   .card__button {
     display: block;
   }
-  /* .card__items:nth-child(5),
-  .card__items:nth-child(6) {
-    display: none;
-  } */
-  /* .card__items.hide-on-mobile {
-    display: none;
-  } */
 }
 @media (max-width: 500px) {
   .card__items {
