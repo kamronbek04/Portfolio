@@ -29,16 +29,16 @@
   </div>
 </template>
 <script>
-import html from './assets/tools/html.png';
-import css from './assets/tools/css.png';
-import bootstrap from './assets/tools/bootstrap.png';
-import sass from './assets/tools/sass.png';
-import js from './assets/tools/js.png';
-import vue from './assets/tools/vue.png';
-import react from './assets/tools/react.png';
-import postgres from './assets/tools/postgres.png';
-import figma from './assets/tools/figma.png';
-import github from './assets/tools/github.png';
+import html from './assets/tools/html.png?format=webp';
+import css from './assets/tools/css.png?format=webp';
+import bootstrap from './assets/tools/bootstrap.png?format=webp';
+import sass from './assets/tools/sass.png?format=webp';
+import js from './assets/tools/js.png?format=webp';
+import vue from './assets/tools/vue.png?format=webp';
+import react from './assets/tools/react.png?format=webp';
+import postgres from './assets/tools/postgres.png?format=webp';
+import figma from './assets/tools/figma.png?format=webp';
+import github from './assets/tools/github.png?format=webp';
 export default {
   data() {
     return {
