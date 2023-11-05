@@ -23,10 +23,22 @@
           :data-aos-duration="calculateAosDuration(index)"
         >
           <div class="card__img--wrapper">
-            <a :href="project.demo" target="_blank">
-              <img class="card__img" :src="project.img" />
-              <a :href="project.github" class="github" target="_blank">
-                <img src="./assets/tools/github.png" />
+            <a
+              :href="project.demo"
+              target="_blank"
+              aria-label="to direct project demo"
+            >
+              <img class="card__img" :src="project.img" :alt="project.title" />
+              <a
+                :href="project.github"
+                class="github"
+                target="_blank"
+                aria-label="to direct to my project github code"
+              >
+                <img
+                  src="./assets/tools/github.png?format=webp"
+                  alt="github icon"
+                />
               </a>
             </a>
           </div>
@@ -53,12 +65,12 @@
 </template>
 
 <script>
-import project1 from './assets/project-1.png';
-import project2 from './assets/project-2.png';
-import project3 from './assets/project-3.png';
-import project4 from './assets/project-4.png';
-import project5 from './assets/project-5.png';
-import project6 from './assets/project-6.png';
+import project1 from './assets/project-1.png?format=webp';
+import project2 from './assets/project-2.png?format=webp';
+import project3 from './assets/project-3.png?format=webp';
+import project4 from './assets/project-4.png?format=webp';
+import project5 from './assets/project-5.png?format=webp';
+import project6 from './assets/project-6.png?format=webp';
 
 export default {
   data() {
@@ -151,6 +163,9 @@ export default {
     },
     updateVisibleProjects() {
       this.$forceUpdate();
+    },
+    calculateAosDuration(index) {
+      return index * 600;
     },
   },
 };

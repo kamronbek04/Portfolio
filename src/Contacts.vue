@@ -20,30 +20,57 @@
               <a
                 href="mailto:islomovkamronbek001@gmail.com"
                 class="icon__wrapper"
+                aria-label="to direct to my gmail address"
               >
                 <i class="fa-regular fa-envelope"></i>
               </a>
-              <a href="mailto:islomovkamronbek001@gmail.com"
+              <a
+                href="mailto:islomovkamronbek001@gmail.com"
+                aria-label="to direct to my gmail address"
                 >islomovkamronbek001 @gmail.com</a
               >
             </div>
             <div class="contact__items">
-              <a href="tel:+998902965156" class="icon__wrapper">
+              <a
+                href="tel:+998902965156"
+                class="icon__wrapper"
+                aria-label="to direct to my phone number"
+              >
                 <i class="fa-solid fa-phone"></i>
               </a>
-              <a href="tel:+998902965156">+998 90 296-51-56</a>
+              <a
+                href="tel:+998902965156"
+                aria-label="to direct to my phone number"
+                >+998 90 296-51-56</a
+              >
             </div>
             <div class="contact__items">
-              <a class="icon__wrapper">
+              <a
+                href="https://maps.app.goo.gl/bUaAbH2jof2rWDwc6"
+                class="icon__wrapper"
+                aria-label="to show my address"
+              >
                 <i class="fa-solid fa-location-dot"></i>
               </a>
-              <a>Uzbekistan , Tashkent region, Mirzo Ulugbek district</a>
+              <a
+                href="https://maps.app.goo.gl/bUaAbH2jof2rWDwc6"
+                aria-label="to show my address"
+                >Uzbekistan , Tashkent region, Mirzo Ulugbek district</a
+              >
             </div>
             <div class="contact__items">
-              <a class="icon__wrapper" href="https://t.me/k_matthew1">
+              <a
+                class="icon__wrapper"
+                href="https://t.me/k_matthew1"
+                aria-label="to direct to my telegram account"
+              >
                 <i class="fa-brands fa-telegram"></i>
               </a>
-              <a href="https://t.me/k_matthew1">@k_matthew1</a>
+              <a
+                href="https://t.me/k_matthew1"
+                aria-label="to direct to my telegram account"
+                >@k_matthew1</a
+              >
             </div>
           </div>
         </div>
@@ -125,6 +152,7 @@ export default {};
 .contact__items a:hover {
   color: var(--violet);
 }
+
 @media (max-width: 900px) {
   .contact__content--wrapper {
     flex-direction: column;
