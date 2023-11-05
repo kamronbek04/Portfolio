@@ -18,7 +18,9 @@
         <div
           v-for="(project, index) in visibleProjects"
           :key="project.title"
-          class="card__items"
+          class="card__items aos-init aos-animate"
+          data-aos="fade-right"
+          :data-aos-duration="calculateAosDuration(index)"
         >
           <div class="card__img--wrapper">
             <a :href="project.demo" target="_blank">
