@@ -26,18 +26,25 @@
             <p class="header__description">Frontend developer</p>
           </div>
         </div>
+        <picture>
+          <source type="image/webp" srcset="./assets/main-img.webp" />
+          <source type="image/png" srcset="./assets/main-img.png" />
+          <img
+            class="header__img"
+            src="./assets/main-img.png"
+            alt="header image"
+          />
+        </picture>
 
-        <img
-          class="header__img"
-          src="./assets/main-img.png?format=webp"
-          alt="header image"
-        />
-
-        <img
-          class="header__img--min"
-          src="https://www.monitorteknologi.com/wp-content/uploads/2020/10/Apa-Itu-Programming-Pemrograman-1170x702.jpg?format=webp"
-          alt="header image for small screens"
-        />
+        <picture>
+          <source type="image/webp" srcset="./assets/main-img-min.webp" />
+          <source type="image/png" srcset="./assets/main-img-min.png" />
+          <img
+            class="header__img--min"
+            src="./assets/main-img-min.png"
+            alt="header image for small screens"
+          />
+        </picture>
       </header>
 
       <div class="social__link">
@@ -201,6 +208,9 @@ header {
   50% {
     opacity: 0;
   }
+}
+.header__img {
+  width: 100%;
 }
 .header__img--min {
   display: none;

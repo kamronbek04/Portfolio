@@ -28,17 +28,30 @@
               target="_blank"
               aria-label="to direct project demo"
             >
-              <img class="card__img" :src="project.img" :alt="project.title" />
+              <picture>
+                <source type="image/webp" :srcset="project.imgweb" />
+                <source type="image/png" :srcset="project.img" />
+                <img
+                  class="card__img"
+                  :src="project.img"
+                  :alt="project.title"
+                />
+              </picture>
+
               <a
                 :href="project.github"
                 class="github"
                 target="_blank"
                 aria-label="to direct to my project github code"
               >
-                <img
-                  src="./assets/tools/github.png?format=webp"
-                  alt="github icon"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/tools/github.webp"
+                  />
+                  <source type="image/png" srcset="./assets/tools/github.png" />
+                  <img src="./assets/tools/github.png" alt="github icon" />
+                </picture>
               </a>
             </a>
           </div>
@@ -65,12 +78,18 @@
 </template>
 
 <script>
-import project1 from './assets/project-1.png?format=webp';
-import project2 from './assets/project-2.png?format=webp';
-import project3 from './assets/project-3.png?format=webp';
-import project4 from './assets/project-4.png?format=webp';
-import project5 from './assets/project-5.png?format=webp';
-import project6 from './assets/project-6.png?format=webp';
+import project1 from './assets/projects/project-1.png';
+import project2 from './assets/projects/project-2.png';
+import project3 from './assets/projects/project-3.png';
+import project4 from './assets/projects/project-4.png';
+import project5 from './assets/projects/project-5.png';
+import project6 from './assets/projects/project-6.png';
+import project1web from './assets/projects/project-1.webp';
+import project2web from './assets/projects/project-2.webp';
+import project3web from './assets/projects/project-3.webp';
+import project4web from './assets/projects/project-4.webp';
+import project5web from './assets/projects/project-5.webp';
+import project6web from './assets/projects/project-6.webp';
 
 export default {
   data() {
@@ -79,6 +98,7 @@ export default {
         {
           title: 'Restaurant',
           img: project1,
+          imgweb: project1web,
           desc: 'Landing page website for restaurant that allow user to get more information about the restaurant.With magnificient images and icons, user-friendly design with responsiveness.',
           tools: { html: 'html', css: 'css' },
           demo: 'https://omnifood-kamronbek.netlify.app/#',
@@ -87,6 +107,7 @@ export default {
         {
           title: 'Koko eat',
           img: project2,
+          imgweb: project2web,
           desc: 'Koko eat is a website specializing in food delivery.Users can filter prices, choose foods they want to deliver, and get more informations about foods that they ordered.',
           tools: {
             html: 'html',
@@ -99,6 +120,7 @@ export default {
         {
           title: 'Quizes',
           img: project6,
+          imgweb: project6web,
           desc: 'Quizes is a website for students to test their skills and knowledges by given fields and at the and they can see their results.This website is created by using Vue router and Vue Compositions API',
           tools: {
             html: 'html',
@@ -111,6 +133,7 @@ export default {
         {
           title: 'Youtube Clone',
           img: project4,
+          imgweb: project4web,
           desc: 'Youtube clone website in a platform that allows user to watch videos and provides an interface for searching,finding information about channel you are watching and suggestion videos depending on the video you are watching',
           tools: {
             html: 'html',
@@ -124,6 +147,7 @@ export default {
         {
           title: 'Dad Jokes',
           img: project3,
+          imgweb: project3web,
           desc: 'Discover a world of humor on the Dad Jokes website, where laughter is just a click away. This delightful platform stands out from the rest with its refreshing simplicity and variety of humours.',
           tools: { html: 'html', css: 'css', js: 'js', restapi: 'restapi' },
           demo: 'https://joke-teller-7560jufp4-kamronbek04.vercel.app/',
@@ -132,6 +156,7 @@ export default {
         {
           title: 'Calculator',
           img: project5,
+          imgweb: project5web,
           desc: 'The Calculator project is designed more like a Macbook laptop calculator. One of the advantages of this calculator is that users can track their calculations step by step.',
           tools: {
             html: 'html',
@@ -216,6 +241,7 @@ export default {
   top: 24px;
   right: 24px;
 }
+.github picture,
 .github img {
   width: 24px !important;
   height: 24px !important;
@@ -289,6 +315,7 @@ export default {
     width: 36px;
     height: 36px;
   }
+  .github picture,
   .github img {
     width: 18px !important;
     height: 18px !important;
